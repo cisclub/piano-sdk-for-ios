@@ -30,7 +30,7 @@ public class ShowTemplateEventParams: NSObject {
         templateVariantId = dict!["templateVariantId"] as? String ?? ""
         displayMode = DisplayMode(name: (dict!["displayMode"] as? String ?? ""))
         containerSelector = dict!["containerSelector"] as? String ?? ""
-        showCloseButton = dict!["showCloseButton"] as? Bool ?? false
+        showCloseButton = false
         
         if let delayByDict = dict!["delayBy"] as? [String: Any] {
             delayBy = DelayBy(dict: delayByDict)
